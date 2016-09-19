@@ -3,7 +3,7 @@
  */
 public class Pet {
     int age;
-    float weight;
-    float height;
+    int weight;
+    double height;
     String color;
 }
