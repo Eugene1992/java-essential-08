@@ -6,6 +6,8 @@ package com.cbs.edu;
 public class Main {
 
     void f() {
+    }
 
+    void g() {
     }
 }
