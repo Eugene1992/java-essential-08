@@ -5,35 +5,33 @@ package com.cbs.edu;
  */
 public class MainOOP {
     public static void main(String[] args) {
-        Human humanOne = new Human();
-        humanOne.name = "Evgeniy";
-        humanOne.age = 33;
-        humanOne.height = 1.84;
+        Human humanOne = new Human("Evgeniy", 23, 1.84);
+        System.out.println(humanOne.getWeightIndex());
 
-        Human humanTwo = new Human();
-        humanTwo.name = "Sasha";
-        humanTwo.age = 31;
-        humanTwo.height = 1.94;
+        Human humanTwo = new Human("Sasha", 25, 1.75);
+        System.out.println(humanTwo.getWeightIndex());
 
-        Human humanOThree = new Human();
-        humanOThree.name = "Serega";
-        humanOThree.age = 29;
-        humanOThree.height = 1.89;
+        Human humanOThree = new Human("Gleb", 24, 1.87);
+        System.out.println(humanOThree.getWeightIndex());
+
+        humanOne.setName("Zhenya");
 
         Human[] humans = {humanOne, humanTwo, humanOThree};
 
-        Human oldestHuman = getOldestHuman(humans);
-        System.out.println(oldestHuman.name);
+        Human oldestHuman = new MainOOP().getOldestHuman(humans);
+        System.out.println(oldestHuman.getAge());
+
+        Human.s();
     }
 
     /**
      * Get oldest Human instance.
      * @return name of the oldest human
      */
-    static Human getOldestHuman(Human[] humans) {
+    Human getOldestHuman(Human[] humans) {
         Human result = humans[0];
         for (Human human : humans) {
-            if (result.age < human.age) {
+            if (result.getAge() < human.getAge()) {
                 result = human;
             }
         }
