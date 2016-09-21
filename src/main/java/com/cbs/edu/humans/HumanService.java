@@ -1,16 +1,9 @@
-package com.cbs.edu;
+package com.cbs.edu.humans;
 
 /**
- * Created by evgeniy on 19/09/16.
+ * Created by evgeniy on 21/09/16.
  */
-public class Main {
-    public static void main(String[] args) {
-        String[] names = {"Sasha", "Sergey", "Gleb"};
-        int[] ages = {27, 26, 29};
-        double[] heights = {180.0, 180.0, 180.0};
-
-        System.out.println(sort(names, ages, heights));
-    }
+public class HumanService {
 
     /**
      * Get oldest Human instance.

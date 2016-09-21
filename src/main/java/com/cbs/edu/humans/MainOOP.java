@@ -1,4 +1,4 @@
-package com.cbs.edu;
+package com.cbs.edu.humans;
 
 /**
  * Created by evgeniy on 19/09/16.
@@ -20,8 +20,6 @@ public class MainOOP {
 
         Human oldestHuman = new MainOOP().getOldestHuman(humans);
         System.out.println(oldestHuman.getAge());
-
-        Human.s();
     }
 
     /**

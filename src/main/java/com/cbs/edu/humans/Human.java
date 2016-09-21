@@ -1,6 +1,7 @@
-package com.cbs.edu;
+package com.cbs.edu.humans;
 
 public class Human {
+
     private String firstname;
     private int age;
     private double height;
@@ -15,27 +16,28 @@ public class Human {
     public void setName(String name) {
         this.firstname = name;
     }
+
     public String getName() {
         return firstname;
     }
+
     public int getAge() {
         return age;
     }
+
     public void setAge(int age) {
         this.age = age;
     }
+
     public double getHeight() {
         return height;
     }
+
     public void setHeight(double height) {
         this.height = height;
     }
 
     public double getWeightIndex() {
         return height / age;
-    }
-
-    static void s() {
-
     }
 }
