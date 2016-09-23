@@ -3,7 +3,8 @@
  */
 public class Rectangle extends Figure {
 
-    Rectangle(int a, int b, int h) {
+    Rectangle(int a, int b, int h)
+    {
         super(a, b, h);
     }
 
