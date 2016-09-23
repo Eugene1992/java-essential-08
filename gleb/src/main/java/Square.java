@@ -1,11 +1,15 @@
 /**
- * Created by Gleb on 21.09.2016.
+ * Created by Gleb on 22.09.2016.
  */
-public class Square extends Figures {
-    int s = 0;
-    public Square(int a, int b) {
-        super(a, b);
-        s = a * b;
+public class Square extends Figure {
+
+
+    Square(int a, int b, int h) {
+        super(a, b, h);
     }
-    public void area () {System.out.println(s + " Square");}
+
+    @Override
+    public double area() {
+        return a * a;
+    }
 }
