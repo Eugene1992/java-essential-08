@@ -12,5 +12,7 @@ public class Test {
         list.add("D");
         list.add("D");
         list.add("D");
+        list.add("S");
+        list.add("S");
     }
 }
