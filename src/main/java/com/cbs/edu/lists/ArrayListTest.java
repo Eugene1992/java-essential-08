@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  * Created by evgeniy on 23/09/16.
  */
-public class Test {
+public class ArrayListTest {
     public static void main(String[] args) {
         ArrayList<Integer> list = new ArrayList<>(100);
 
