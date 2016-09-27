@@ -16,28 +16,28 @@ public class Array_list {
             linkedList.add("Hello world!");
         }
         long startGetAl = System.currentTimeMillis();
-        for (int i = 0; i < 10_000; i++){
+        for (int i = 0; i < 1000; i++){
             arrayList.get(500);
         }
         long endGetAL = System.currentTimeMillis();
         System.out.println("ArrayList .get() - " + (endGetAL - startGetAl));
 
         long startGetAlL = System.currentTimeMillis();
-        for (int i = 0; i < 10_000; i++){
+        for (int i = 0; i < 1000; i++){
             linkedList.get(500);
         }
         long endGetALL = System.currentTimeMillis();
         System.out.println("ArrayList .get() - " + (endGetALL - startGetAlL));
 
         long startSetAl = System.currentTimeMillis();
-        for (int i = 0; i < 10_000; i++){
+        for (int i = 0; i < 1000; i++){
             arrayList.set(500, "Hello");
         }
         long endSetAL = System.currentTimeMillis();
         System.out.println("ArrayList .set() - " + (endSetAL - startSetAl));
 
         long startSetAlL = System.currentTimeMillis();
-        for (int i = 0; i < 10_000; i++){
+        for (int i = 0; i < 1000; i++){
             linkedList.set(500, "Hello");
         }
         long endSetALL = System.currentTimeMillis();
