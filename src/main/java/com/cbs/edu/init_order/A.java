@@ -8,12 +8,12 @@ public class A {
     int filedA;
 
     static {
-        System.out.println("Static init block A");
+        System.out.println("Static init block I");
 //        System.out.println(k);
     }
 
     {
-        System.out.println("Non static init block A");
+        System.out.println("Non static init block I");
         System.out.println(k);
     }
 
@@ -21,7 +21,7 @@ public class A {
 
     public A(int filedA) {
         this.filedA = filedA;
-        System.out.println("Constructor A");
+        System.out.println("Constructor I");
     }
 
 }

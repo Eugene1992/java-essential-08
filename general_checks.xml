@@ -802,7 +802,7 @@
         <!--<module name="FinalParameters"/>-->
 
         <!--
-        Description:    A check for Tod0 comments. Actually it is a generic regular expression matcher on Java comments.
+        Description:    I check for Tod0 comments. Actually it is a generic regular expression matcher on Java comments.
                         To check for other patterns in Java comments, set the format property.
         Doc ref:        http://checkstyle.sourceforge.net/config_misc.html#TodoComment
         -->
