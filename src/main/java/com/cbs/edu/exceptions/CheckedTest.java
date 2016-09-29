@@ -1,20 +1,27 @@
 package com.cbs.edu.exceptions;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.InputStream;
+import java.io.*;
 
 public class CheckedTest {
-    public static void main(String[] args) {
-        try {
+    public static void main(String[] args) throws IllegalAgeValueException {
+
             checkAge(-12);
-        } catch (IllegalAgeValueException e) {
-            e.printStackTrace();
-        }
+
     }
 
-    public static void f() throws FileNotFoundException {
-        InputStream is = new FileInputStream("C:/temp.txt");
+    public static void f() {
+        OutputStream is = null;
+        try {
+            is = new FileOutputStream("C:/temp.txt");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                is.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     public static void checkAge(int age) throws IllegalAgeValueException {

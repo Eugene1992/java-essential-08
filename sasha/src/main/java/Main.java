@@ -32,6 +32,7 @@ public class Main {
         System.out.println(oldestPets.age);
 
     }
+
     static Pet getOldestPet(Pet[] pets){
         Pet result = pets[0];
         for (Pet pet : pets){

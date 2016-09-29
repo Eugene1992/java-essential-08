@@ -6,4 +6,11 @@ public class Pet {
     int weight;
     double height;
     String color;
+
+    public Pet(int age) {
+        this.age = age;
+    }
+
+    public Pet() {
+    }
 }
